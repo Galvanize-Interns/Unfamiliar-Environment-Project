@@ -4,7 +4,7 @@
   "description": "donuts, cats, react, and such",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack -p",
     "compile": "webpack-dev-server -d",
     "start": "nodemon server.js"
@@ -26,7 +26,10 @@
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
     "graphql": "^15.0.0",
+    "graphql-tester": "0.0.5",
+    "jest": "^26.0.1",
     "mongodb": "^3.5.7",
     "mongoose": "^5.9.14",
     "nodemon": "^1.19.1",
