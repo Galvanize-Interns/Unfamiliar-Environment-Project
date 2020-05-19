@@ -9,3 +9,5 @@ db.once("open" ,() => {
 });
 
 //import schema here
+const {cashier, manager, customerService, salesRep, electronicManager, groceriesStocker, groceriesManager} = require('./Position');
+const {generalSales,Electronics,Groceries} = require('./Department');

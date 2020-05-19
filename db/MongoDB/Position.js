@@ -65,3 +65,5 @@ const  groceriesManager = new newPosition({
     description: 'Manages stockers.',
     salary: '$15/hr'
 });
+
+module.exports = {cashier, manager, customerService, salesRep, electronicManager, groceriesStocker, groceriesManager};
