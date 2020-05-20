@@ -1,13 +1,14 @@
-DROP DATABASE IF EXISTS Positions;
+DROP DATABASE IF EXISTS Employees;
 
-CREATE DATABASE Positions;
+CREATE DATABASE Employees;
 
-USE Positions;
+USE Employees;
 
-CREATE TABLE Workers(
-    position_id INT(1) AUTO_INCREMENT PRIMARY KEY NOT NULL, 
-    title VARCHAR(100),
-    department_id INT(0),
-    descr VARCHAR(255),
-    salary INT(0)
+CREATE TABLE Workers( 
+    first_name VARCHAR(25),
+    last_name VARCHAR(25),
+    start_date VARCHAR(50),
+    city VARCHAR(50),
+    state VARCHAR(50),
+    position_id INT(1) PRIMARY KEY NOT NULL,
 );
