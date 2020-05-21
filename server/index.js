@@ -4,7 +4,7 @@ const { ApolloServer, gql } = require('apollo-server');
 // that together define the "shape" of queries that are executed against
 // your data.
 const typeDefs = gql`
-  type Book {
+  type Books {
     id: Int
     name: String
     authorID: Int
@@ -14,7 +14,7 @@ const typeDefs = gql`
   # clients can execute, along with the return type for each. In this
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
-    books: [Book]
+    books: [Books]
   }
 `;
 
@@ -33,10 +33,10 @@ const books = [
 // Resolvers define the technique for fetching the types defined in the
 // schema. This resolver retrieves books from the "books" array above.
 const resolvers = {
-  Query: {
-    books: () => books,
-  },
-};
+    Query: {
+      books: () => books,
+    },
+  };
 
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
