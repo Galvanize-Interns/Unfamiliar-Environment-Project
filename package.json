@@ -1,15 +1,19 @@
 {
-  "name": "general_reacting",
+  "name": "unfamiliar_tech_poc",
   "version": "1.0.0",
-  "description": "donuts, cats, react, and such",
-  "main": "app.js",
+  "description": "Showcase the useful services from introducing GraphQL with Apollo and KnexJS",
+  "main": "app.jsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Galvanize-Interns/Unfamiliar-Environment-Project"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
     "compile": "webpack-dev-server -d",
     "start": "nodemon server.js"
   },
-  "author": "Salinas",
+  "author": "Code Splitters",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -19,14 +23,24 @@
     "babel-loader": "^8.0.6",
     "react": "^16.8.6",
     "webpack": "^4.38.0",
-    "webpack-cli": "^3.3.6",
+    "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@types/react": "^16.9.35",
+    "apollo": "^2.28.0",
+    "apollo-boost": "^0.4.9",
+    "apollo-server": "^2.13.1",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
     "graphql": "^15.0.0",
+    "graphql-tester": "0.0.5",
+    "jest": "^26.0.1",
+    "knex": "^0.21.1",
     "mongodb": "^3.5.7",
     "mongoose": "^5.9.14",
     "nodemon": "^1.19.1",
