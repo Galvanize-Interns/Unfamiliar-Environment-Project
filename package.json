@@ -8,7 +8,7 @@
     "url": "https://github.com/Galvanize-Interns/Unfamiliar-Environment-Project"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack -p",
     "compile": "webpack-dev-server -d",
     "start": "nodemon server.js"
