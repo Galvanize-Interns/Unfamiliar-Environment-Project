@@ -1,15 +1,19 @@
 {
-  "name": "general_reacting",
+  "name": "unfamiliar_tech_poc",
   "version": "1.0.0",
-  "description": "donuts, cats, react, and such",
-  "main": "app.js",
+  "description": "Showcase the useful services from introducing GraphQL with Apollo and KnexJS",
+  "main": "app.jsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Galvanize-Interns/Unfamiliar-Environment-Project"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
     "compile": "webpack-dev-server -d",
     "start": "nodemon server.js"
   },
-  "author": "Salinas",
+  "author": "Code Splitters",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
