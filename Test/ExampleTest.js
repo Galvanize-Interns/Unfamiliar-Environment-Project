@@ -1,6 +1,6 @@
 
 const tester = require('graphql-tester').tester
-
+/
 describe('A query from graphql', () => {
     const self = this;
     beforeAll(() => {
